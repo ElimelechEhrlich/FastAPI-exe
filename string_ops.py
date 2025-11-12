@@ -1,10 +1,10 @@
 import json
 
-def reverse_str(word:str):
-    return { "original": word, "reversed_text": word[::-1] }
+def reverse_str(text:str):
+    return { "original": text, "reversed_text": text[::-1] }
 
-def to_upper(word:str):
-    return { "original": word, "uppercased_text": word.upper() }
+def to_upper(text:str):
+    return { "original": text, "uppercased_text": text.upper() }
 
 def remove_vowels(text):
     to_remove = 'aeiouAEIOU'
@@ -35,8 +35,3 @@ def letter_counts_map(text):
         r = l.read()
         letter_counts_load = json.loads(r)
     return letter_counts_load
-
-
-
-          
-# print(letter_counts('elimelech'))
