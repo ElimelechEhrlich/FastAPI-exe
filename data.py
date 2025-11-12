@@ -15,7 +15,11 @@
 #     json.dump(jsonContent, f, indent=4)
 
 
-def read_in_reversr(word:str):
-    return word[::-1]
+def return_in_reversr(word:str):
+    return { "original": word, "reversed_text": word[::-1] }
+
+def return_in_uppercase(word:str):
+    return { "original": word, "uppercased_text": word.upper() }
+    
     
     
